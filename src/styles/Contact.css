@@ -1,0 +1,37 @@
+/* Contact Styles */
+.contact {
+    background-color: var(--bg-primary);
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.contact-text {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    background-color: var(--bg-secondary);
+}
+
+.footer-link {
+    color: var(--primary);
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette - Premium Dark */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-accent: #1a1a1a;
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-accent: #64ffda;
+  /* Teal/Cyan accent */
+
+  --primary: #64ffda;
+  --secondary: #8892b0;
+
+  --divider: rgba(255, 255, 255, 0.1);
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #64ffda 0%, #43a047 100%);
+  --gradient-text: linear-gradient(to right, #64ffda, #43a047);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Container */
+  --container-width: 1200px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.text-gradient {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--bg-primary);
+}
+
+.btn-primary:hover {
+  background: #52d1b1;
+  transform: translateY(-2px);
+}

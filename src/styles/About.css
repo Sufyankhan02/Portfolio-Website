@@ -1,0 +1,122 @@
+/* About Styles */
+.about {
+    background-color: var(--bg-primary);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-img-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 4px;
+    filter: grayscale(100%) contrast(1.1);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    border: 2px solid var(--text-secondary);
+}
+
+.about-img:hover {
+    filter: none;
+    transform: translate(-5px, -5px);
+    border-color: var(--primary);
+}
+
+.about-img-container::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.about-img-container:hover::after {
+    transform: translate(5px, 5px);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-title::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: var(--divider);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: var(--divider);
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 250px));
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.skill-item {
+    position: relative;
+    padding-left: 20px;
+    font-family: inherit;
+    color: var(--text-secondary);
+}
+
+.skill-item::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-title {
+        justify-content: center;
+    }
+
+    .section-title::after {
+        display: none;
+    }
+
+    .about-img-container {
+        margin: 0 auto 3rem;
+    }
+}
