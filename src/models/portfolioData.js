@@ -53,5 +53,6 @@ export const currencyRates = {
     INR: { symbol: '₹', rate: 83, name: 'India' },
     CAD: { symbol: 'C$', rate: 1.35, name: 'Canada' },
     AUD: { symbol: 'A$', rate: 1.52, name: 'Australia' },
-    KWD: { symbol: 'KD', rate: 0.31, name: 'Kuwait' }
+    KWD: { symbol: 'KD', rate: 0.31, name: 'Kuwait' },
+    SAR: { symbol: 'SR', rate: 3.75, name: 'Saudi Arabia' }
 };
